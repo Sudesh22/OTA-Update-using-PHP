@@ -28,7 +28,7 @@
     die('Error: ' . mysqli_error($conn));
   }
 
-  $sql = "SELECT * FROM `version_hist`;";
+  $sql = "SELECT * FROM `version_hist` ORDER BY `Primary key` DESC LIMIT 1;";
   $result = $conn->query($sql);
 
   /* numeric array */

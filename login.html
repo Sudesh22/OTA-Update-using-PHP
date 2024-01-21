@@ -1,0 +1,43 @@
+</html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OTA Update using PHP Server</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <nav>
+            <p>OTA Update using PHP Server</p>
+        </nav>
+
+        <p>
+            Login
+        </p>
+
+        <form action="login.php" method="post" enctype="multipart/form-data">
+            Select file to upload: <br>
+            Version: <input type="text/number" className="version" name="version"> 
+            Patch info: <input type="text" className="info" name="info"> 
+            <input type="file" name="fileToUpload" id="fileToUpload">
+            <input type="submit" value="Upload" name="submit">
+        </form>
+
+        <p>List of previously uploaded files: <br></p>
+
+        <table>
+
+        </table>
+          
+<!--         
+        <form action="form.php" method="post">
+
+            Name: <input type="text" name="name"> <br>
+            Age: <input type="text" name="age"> <br>
+            Email: <input type="text" name="email"> <br>
+            <input type="submit" name="submit">
+        </form> -->
+
+    </body>
+</html>
