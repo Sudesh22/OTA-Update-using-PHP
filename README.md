@@ -31,5 +31,5 @@ This project implements PHP scripting language to create a server for updating t
 
 <p align=center>
   <img src="Resources/update.svg">
-  <p align=center>JSON on Updates.php</p>
+  <p align=center>Serial data on COM port</p>
 </p>
