@@ -6,7 +6,7 @@ $env = parse_ini_file('.env');
 $servername = $env["servername"];
 $username = $env["username"];
 $password = $env["password"];
-$dbname = $env["dbname"];
+$dbname = $env["userdb"];
 
 $target_dir = "uploads/" . $folder_name . "/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);

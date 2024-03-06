@@ -4,7 +4,7 @@ $env = parse_ini_file('.env');
 $servername = $env["servername"];
 $username = $env["username"];
 $password = $env["password"];
-$dbname = $env["dbname"];
+$dbname = $env["userdb"];
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -30,8 +30,9 @@ if ($result->num_rows > 0) {
 $file_path = $row[3];
 if (file_exists($file_path)){
     header('Content-type: application/bin');
-    header('Content-Disposition: attachment; filename="OTA_ver_0.1.ino.nodemcu.bin"');
-    readfile($file_path);
+    header('Content-Disposition: attachment; filename="OTA_update.ino.generic.bin"');
+    header('content-length:'.filesize($file_path));
+    readfile("OTA_update.ino.generic.bin");
 }else{
     echo "file does not exist";
 }
